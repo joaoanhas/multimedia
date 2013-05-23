@@ -1,0 +1,29 @@
+<h1>Listing grandslams</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Country</th>
+    <th>City</th>
+    <th>Courttype</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @grandslams.each do |grandslam| %>
+  <tr>
+    <td><%= grandslam.name %></td>
+    <td><%= grandslam.country %></td>
+    <td><%= grandslam.city %></td>
+    <td><%= grandslam.courttype %></td>
+    <td><%= link_to 'Show', grandslam %></td>
+    <td><%= link_to 'Edit', edit_grandslam_path(grandslam) %></td>
+    <td><%= link_to 'Destroy', grandslam, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Grandslam', new_grandslam_path %>

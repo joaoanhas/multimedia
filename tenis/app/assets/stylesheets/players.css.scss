@@ -1,0 +1,23 @@
+// Place all the styles related to the players controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.player_image{
+  float: left;
+}
+
+.player_info{
+  margin: 10px;
+}
+
+.player_description{
+  clear:both;
+  margin: 30px;
+}
+
+.text_big{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+}

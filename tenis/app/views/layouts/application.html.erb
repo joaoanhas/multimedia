@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+  <head>
+
+    <title><%= content_for?(:title) ? yield(:title) : "Tenis" %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+
+  </head>
+  <body class="body">
+
+
+      <br><br><br>
+      <div class="container">
+        <%= render 'layouts/header' %>
+
+            <div class="main_container">
+              <%= yield %>
+            </div>
+        <%= render 'layouts/footer' %>
+      </div>
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<h2>Recent news</h2>
+
+
+  <% @notices.each do |notice| %>
+
+    <div class="well">
+        <h3><%= notice.title %></h3>
+        <p><%= notice.created_at %></p>
+        <%= notice.content %>
+    </div>
+  <% end %>
+
+<br />
+
+

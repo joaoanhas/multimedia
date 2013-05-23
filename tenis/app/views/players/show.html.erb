@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+
+    <div class="row ">
+      <div class="span4">
+        <%= image_tag @player.avatar.url(:medium), :class => "player_image img-polaroid"   %>
+      </div>
+      <div class="span7 ">
+        <div class="player_info well">
+
+          <h1><%= @player.name %></h1>
+
+          <p>
+            <small>AGE</small>
+            <span class="text_big"><%= @player.age %></span>
+
+          </p>
+
+          <p>
+            <small>NATIONALITY</small>
+            <span class="text_big"><%= @player.nationality %></span>
+          </p>
+
+          <p>
+            <small>YEAR TURNED PRO</small>
+            <span class="text_big"><%= @player.yearpro %>      </span>
+          </p>
+
+          <p>
+            <small>HEIGHT</small>
+            <span class="text_big"><%= @player.height %>  </span>
+            cm
+          </p>
+
+          <p>
+            <small>WEIGHT</small>
+            <span class="text_big"> <%= @player.weight %></span>
+            kg
+          </p>
+
+          <p>
+            <small>POINTS</small>
+            <span class="text_big"> <%= @player.points %></span>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+
+<div class="row">
+  <div class="player_description well span11">
+
+    <p>
+      <h3>Bio</h3>
+      <%= @player.description %>
+    </p>
+
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>

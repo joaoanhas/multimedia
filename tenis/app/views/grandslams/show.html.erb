@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @grandslam.name %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @grandslam.country %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @grandslam.city %>
+</p>
+
+<p>
+  <b>Courttype:</b>
+  <%= @grandslam.courttype %>
+</p>
+
+
+<%= link_to 'Edit', edit_grandslam_path(@grandslam) %> |
+<%= link_to 'Back', grandslams_path %>
+
+
+<h2>Editions</h2>
+<% @grandslam.editions.each do |edition| %>
+    <p>
+      <b>ID:</b>
+      <%= link_to edition.id, grandslam_edition_path(:grandslam_id => @grandslam.id,:id => edition.id) %>
+
+      <b>Year:</b>
+      <%= edition.year %>
+
+      <b>winner:</b>
+      <%= edition.winner_id %>
+
+      <%= image_tag Player.find(edition.winner_id).avatar.url(:thumb)  %>
+
+      <b>finalist:</b>
+      <%= edition.finalist_id %>
+
+      <%= image_tag Player.find(edition.finalist_id).avatar.url(:thumb)  %>
+
+    </p>
+
+<% end %>
+
+
+<h2>Add a edition:</h2>
+<%= form_for([@grandslam, @grandslam.editions.build]) do |f| %>
+    <div class="field">
+      <%= f.label :year %><br />
+      <%= f.text_field :year %>
+    </div>
+    <div class="field">
+      <%= f.label :winner_id %><br />
+      <%= f.text_field :winner_id %>
+    </div>
+    <div class="field">
+      <%= f.label :finalist_id %><br />
+      <%= f.text_field :finalist_id %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
