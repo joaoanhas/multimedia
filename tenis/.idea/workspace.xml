@@ -19,7 +19,7 @@
     <file path="/home.erb" changelist="fed95764-deae-45a9-8776-4a3779c1dda4" time="1367493016569" ignored="false" />
     <file path="/players_helper.rb" changelist="fed95764-deae-45a9-8776-4a3779c1dda4" time="1364914121979" ignored="false" />
     <file path="/960.css" changelist="fed95764-deae-45a9-8776-4a3779c1dda4" time="1365721294446" ignored="false" />
-    <file path="/application.html.erb" changelist="fed95764-deae-45a9-8776-4a3779c1dda4" time="1367486786299" ignored="false" />
+    <file path="/application.html.erb" changelist="fed95764-deae-45a9-8776-4a3779c1dda4" time="1369325983430" ignored="false" />
     <file path="/_footer.html.erb" changelist="fed95764-deae-45a9-8776-4a3779c1dda4" time="1365726213728" ignored="false" />
     <file path="$USER_HOME$/Documentos/Webapp/app/views/layouts/_header.html.erb" changelist="fed95764-deae-45a9-8776-4a3779c1dda4" time="1365722027842" ignored="false" />
     <file path="/_header.html.erb" changelist="fed95764-deae-45a9-8776-4a3779c1dda4" time="1366367297898" ignored="false" />
@@ -64,46 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_recent.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/notices/_recent.html.erb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="24" selection-start="210" selection-end="210" vertical-scroll-proportion="0.31135532">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/notices/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="static_pages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="25" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="63" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+            <state line="19" column="14" selection-start="445" selection-end="445" vertical-scroll-proportion="0.5340314">
               <folding />
             </state>
           </provider>
@@ -123,11 +87,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
         <option value="$PROJECT_DIR$/app/views/players/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="dbtable:/65e12282/97d27290-1d47-49cc-97a3-c171a5dd4817/..players" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/db/migrate/20130502093135_create_reports.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -137,8 +99,10 @@
         <option value="$PROJECT_DIR$/app/views/notices/recent.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/notices_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/home.erb" />
         <option value="$PROJECT_DIR$/app/views/notices/_recent.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/home.erb" />
+        <option value="$PROJECT_DIR$/app/views/notices/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -200,7 +164,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -445,6 +408,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
@@ -459,9 +423,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -476,7 +440,7 @@
       <recent name="C:\Users\Joao\Desktop\TENIS\tenis\app\assets\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Rake.db:migrate">
+  <component name="RunManager" selected="Rails.Development: tenis">
     <configuration default="false" name="db:rollback" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="tenis" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -880,17 +844,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20530303" sideWeight="0.6709887" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20530303" sideWeight="0.70113087" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28030303" sideWeight="0.6709887" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28484848" sideWeight="0.70113087" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29983792" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29886913" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -962,13 +926,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.12530713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -982,11 +939,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/players/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="275" selection-end="275" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.12/lib/rails/generators/rails/scaffold/templates/scaffold.css">
@@ -1035,13 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="63" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/notices/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
@@ -1051,7 +996,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/notices/_recent.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="210" selection-end="210" vertical-scroll-proportion="0.31135532">
+        <state line="10" column="50" selection-start="210" selection-end="210" vertical-scroll-proportion="0.4450262">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.5340314">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/notices/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="11" selection-start="33" selection-end="33" vertical-scroll-proportion="0.04450262">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="14" selection-start="445" selection-end="445" vertical-scroll-proportion="0.5340314">
           <folding />
         </state>
       </provider>
