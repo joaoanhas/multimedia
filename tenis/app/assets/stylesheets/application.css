@@ -12,6 +12,13 @@
  *= require_tree .
  */
 
+#main{
+
+    margin: 20px;
+
+}
+
+
 .body{
     background:url(/assets/back2.jpg) no-repeat center center fixed;
 
@@ -34,4 +41,54 @@
     border-radius: 10px;
     -moz-box-shadow: 0 0 30px 5px #999;
     -webkit-box-shadow: 0 0 30px 5px #999;
+    height: 1000px;
+}
+
+
+#menu {
+    float: right;
+    height: 40px;
+}
+
+#menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    float: left;
+    margin-right: 1px;
+}
+
+#menu a {
+    display: block;
+    height: 40px;
+    padding: 0px 30px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#menu a:hover {
+    text-decoration: none;
+    background: #5190e0;
+}
+
+#menu .active
+{
+    background: #5190e0;
+}
+
+#main {
+    float:left;
+    width:500px;
+}
+
+#sidebar {
+    margin: 20px;
+    float:right;
+    width:250px;
 }

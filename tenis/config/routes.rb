@@ -1,10 +1,10 @@
 Tenis::Application.routes.draw do
-  resources :notices
 
+
+  resources :notices
+  resources :players
 
   get "home/index"
-
-
 
   resources :grandslams do
     resources :editions do
@@ -13,7 +13,7 @@ Tenis::Application.routes.draw do
   end
 
 
-  resources :players
+
   root :to => 'static_pages#home'
 
   match '/', :to => 'static_pages#home'

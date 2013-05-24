@@ -1,12 +1,22 @@
 <% provide(:title, 'Home') %>
 
-<h1>
-  Road to London 2013
-</h1>
 
-<img alt="ATP London" src="/assets/atplondon.jpg" />
+<div id="main">
 
+  <h2>Introduction Video</h2>
 
-<%= render :partial => 'notices/recent', :object => @notices %>
+    <video width="540" height="340" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
 
+  <%= render :partial => 'players/points', :object => @players %>
 
+</div>
+
+<div id="sidebar">
+
+  <%= render :partial => 'notices/recent', :object => @notices %>
+
+</div>

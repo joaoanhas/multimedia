@@ -11,12 +11,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">TenisCenter</a>
 
 
 
-        <div class="container nav-collapse">
+
+        <div class="container nav-collapse" id="menu">
           <ul class="nav">
+            <li><%= link_to "Homepage", root_path()  %></li>
             <li><%= link_to "Players", players_path()  %></li>
             <li><%= link_to "Grandslams", grandslams_path()  %></li>
           </ul>
