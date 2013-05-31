@@ -1,6 +1,6 @@
 <h1>Listing players</h1>
 
-<table class="table">
+<table class="table table_list_players">
   <tr>
     <th>Image</th>
     <th>Name</th>
@@ -10,15 +10,13 @@
     <th>Height</th>
     <th>Weight</th>
     <th>Points</th>
-    <th></th>
-    <th></th>
-    <th></th>
+
   </tr>
 
 <% @players.each do |player| %>
   <tr>
-    <td><%= image_tag player.avatar.url(:thumb)%></td>
-    <td><%= player.name %></td>
+    <td><img src = "<%= player.photo %>" alt = "Picture of a happy monkey" class = "player_image_thumb" /></td>
+    <td><%= link_to player.name,player %></td>
     <td><%= player.age %></td>
     <td><%= player.nationality %></td>
     <td><%= player.yearpro %></td>
@@ -26,14 +24,11 @@
     <td><%= player.weight %></td>
     <td><%= player.points %></td>
 
-
-    <td><%= link_to 'Show', player %></td>
-    <td><%= link_to 'Edit', edit_player_path(player) %></td>
-    <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+</tr>
 <% end %>
 </table>
 
 <br />
 
 <%= link_to 'New Player', new_player_path %>
+

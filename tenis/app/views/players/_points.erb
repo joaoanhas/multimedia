@@ -1,22 +1,28 @@
-
-
 <h2>Ranking ATP</h2>
 
-<table class="table table-bordered">
-        <% @players.each_with_index do |player, i| %>
-            <tr>
-                <td class="first">
-                    <%= (i+1) %>
-                </td>
-                <td>
-                    <%= player.name %>
-                </td>
-                <td>
-                    <%= player.points %>
-                </td>
-            </tr>
-        <% end %>
-</table>
+<table class="pointsTable" id="points">
+
+  <tbody>
+  <% @players.each_with_index do |player, i| %>
+      <% if i>7 %>
+          <tr style="background: grey;">
+      <% else %>
+          <tr>
+      <% end %>
+            <td class="table_player_position" style="width: 30px; ">
+              <%= (i+1) %>
+            </td>
+            <td class="table_player_name" style="width: 500px;">
+              <%= link_to player.name,player %>
+            </td>
+            <td  class="table_player_points" >
+              <%= player.points %>
+            </td>
+          </tr>
+      <% end %>
+      </tbody>
+
+  </table>
 
 
 

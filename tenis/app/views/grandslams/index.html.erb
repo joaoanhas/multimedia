@@ -1,26 +1,22 @@
 <h1>Listing grandslams</h1>
 
-<table>
+<table class="table table_list_players">
   <tr>
+    <th>Photo</th>
     <th>Name</th>
     <th>Country</th>
     <th>City</th>
     <th>Courttype</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @grandslams.each do |grandslam| %>
   <tr>
-    <td><%= grandslam.name %></td>
+    <td><img src = "<%= grandslam.photo %>" alt = "Picture of a happy monkey" class = "player_image_thumb" /></td>
+    <td><%= link_to grandslam.name,grandslam %></td>
     <td><%= grandslam.country %></td>
     <td><%= grandslam.city %></td>
     <td><%= grandslam.courttype %></td>
-    <td><%= link_to 'Show', grandslam %></td>
-    <td><%= link_to 'Edit', edit_grandslam_path(grandslam) %></td>
-    <td><%= link_to 'Destroy', grandslam, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+</tr>
 <% end %>
 </table>
 

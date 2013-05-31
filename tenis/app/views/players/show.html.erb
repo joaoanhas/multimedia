@@ -1,9 +1,7 @@
-<p id="notice"><%= notice %></p>
-
 
     <div class="row ">
       <div class="span4">
-        <%= image_tag @player.avatar.url(:medium), :class => "player_image img-polaroid"   %>
+        <img src = "<%= @player.photo %>" alt = "Picture of a happy monkey" class = "img-polaroid player_image" />
       </div>
       <div class="span7 ">
         <div class="player_info well">

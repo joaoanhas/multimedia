@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
+<h2>
   <%= @notice.title %>
-</p>
+</h2>
 
-<p>
-  <b>Content:</b>
+<article class="well" style="width: 700px;">
   <%= @notice.content %>
-</p>
+</article>
 
 
 <%= link_to 'Edit', edit_notice_path(@notice) %> |

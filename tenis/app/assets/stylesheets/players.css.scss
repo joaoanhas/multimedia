@@ -2,10 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.table_list_players td{
+  display:table-cell;
+  vertical-align:middle
+}
 
+.player_image_thumb{
+  width:50px; /* you can use % */
+  height: auto;
+}
 
 .player_image{
-  float: left;
+  width:200px; /* you can use % */
+  height: auto;
+  margin: 15px 15px 15px 30px;
 }
 
 .player_info{

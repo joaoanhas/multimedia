@@ -19,4 +19,6 @@ Tenis::Application.routes.draw do
   match '/', :to => 'static_pages#home'
   match '/help', :to => 'static_pages#help'
   match '/about', :to => 'static_pages#about'
+  match '/livescore', :to => 'static_pages#livescore'
+  match '/tennisgame', :to => 'static_pages#tennisgame'
 end

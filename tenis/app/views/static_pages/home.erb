@@ -3,13 +3,13 @@
 
 <div id="main">
 
+
   <h2>Introduction Video</h2>
 
-    <video width="540" height="340" controls>
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
+
+
+  <iframe width="540" height="345"
+          src="http://www.youtube.com/embed/f6uHcu-wG_w" frameborder="1" allowfullscreen></iframe>
 
   <%= render :partial => 'players/points', :object => @players %>
 
@@ -20,3 +20,6 @@
   <%= render :partial => 'notices/recent', :object => @notices %>
 
 </div>
+
+
+

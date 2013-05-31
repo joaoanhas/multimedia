@@ -4,6 +4,7 @@ class GrandslamsController < ApplicationController
   def index
     @grandslams = Grandslam.all
 
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @grandslams }
@@ -14,6 +15,7 @@ class GrandslamsController < ApplicationController
   # GET /grandslams/1.json
   def show
     @grandslam = Grandslam.find(params[:id])
+    @editions = @grandslam.editions.order("year")
 
     respond_to do |format|
       format.html # show.html.erb

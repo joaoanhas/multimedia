@@ -1,52 +1,79 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @grandslam.name %>
-</p>
+<div class="row ">
+  <div class="span4">
+    <img src = "<%= @grandslam.photo %>" alt = "Picture of a happy monkey" class = "img-polaroid grandslam_image" />
+  </div>
+  <div class="span6" style="margin-left: 50px">
+    <div class="grandslam_info well">
 
-<p>
-  <b>Country:</b>
-  <%= @grandslam.country %>
-</p>
+      <h1><%= @grandslam.name %></h1>
 
-<p>
-  <b>City:</b>
-  <%= @grandslam.city %>
-</p>
+      <p>
+        <small>COUNTRY</small>
+        <span class="text_big"><%= @grandslam.country %></span>
+      </p>
 
-<p>
-  <b>Courttype:</b>
-  <%= @grandslam.courttype %>
-</p>
+      <p>
+        <small>CITY</small>
+        <span class="text_big"><%= @grandslam.city %>      </span>
+      </p>
+
+      <p>
+        <small>COURTTYPE</small>
+        <span class="text_big"><%= @grandslam.courttype %>  </span>
+      </p>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="grandslam_description well span11">
+
+    <h2>Editions</h2>
+    <table class="pointsTable">
+      <thead>
+          <tr>
+            <td style="border: 1px solid black;">
+               Year
+            </td>
+            <td class="table_player_name" style="border: 1px solid black;">
+              Winner
+            </td>
+            <td class="table_player_name" style="border: 1px solid black;">
+              Finalist
+            </td>
+          </tr>
+      </thead>
+
+    <% @grandslam.editions.each do |edition| %>
+
+          <tr>
+            <td class="table_player_position" style="border: 1px solid black;">
+              <%= edition.year %>
+            </td>
+            <td class="table_player_name" style="width: 300px;border: 1px solid black;">
+              <%= link_to get_player(edition.winner_id).name,get_player(edition.winner_id) %>
+            </td>
+            <td class="table_player_name"  style="width: 300px;border: 1px solid black;">
+              <%= link_to get_player(edition.finalist_id).name,get_player(edition.finalist_id) %>
+            </td>
+          </tr>
+
+    <% end %>
+    </table>
+
+  </div>
+</div>
 
 
 <%= link_to 'Edit', edit_grandslam_path(@grandslam) %> |
 <%= link_to 'Back', grandslams_path %>
 
 
-<h2>Editions</h2>
-<% @grandslam.editions.each do |edition| %>
-    <p>
-      <b>ID:</b>
-      <%= link_to edition.id, grandslam_edition_path(:grandslam_id => @grandslam.id,:id => edition.id) %>
 
-      <b>Year:</b>
-      <%= edition.year %>
-
-      <b>winner:</b>
-      <%= edition.winner_id %>
-
-      <%= image_tag Player.find(edition.winner_id).avatar.url(:thumb)  %>
-
-      <b>finalist:</b>
-      <%= edition.finalist_id %>
-
-      <%= image_tag Player.find(edition.finalist_id).avatar.url(:thumb)  %>
-
-    </p>
-
-<% end %>
 
 
 <h2>Add a edition:</h2>

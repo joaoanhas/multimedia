@@ -4,9 +4,11 @@
   <% @notices.each do |notice| %>
 
     <div class="well">
-        <h3><%= notice.title %></h3>
-        <p><%= notice.created_at %></p>
-        <%= notice.content %>
+        <b><%= link_to notice.title,notice %></b>
+        <p><small><%= notice.created_at %></small></p>
+        <%= (notice.content).split[0..50].join(" ")+"..." %>
+
+
     </div>
   <% end %>
 
